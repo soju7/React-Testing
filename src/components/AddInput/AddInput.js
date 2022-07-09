@@ -29,10 +29,12 @@ function AddInput({
                 value={todo} 
                 onChange={(e) => setTodo(e.target.value)}
                 placeholder="Add a new task here..."
+                data-testid="add-todo-input"
             />
             <button 
                 className="add-btn"
                 onClick={addTodo}
+                data-testid="add-todo-btn"
             >
                 Add
             </button>
